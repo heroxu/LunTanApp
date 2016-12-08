@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.imbryk.viewPager.LoopViewPager
+            android:id="@+id/by_loop_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/by_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:strokeWidth="0dp"
+            app:radius="3dp"
+            app:gap="7dp"
+            app:pageColor="#A2A2A2"
+            app:fillColor="#FFFFFF"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</merge>
